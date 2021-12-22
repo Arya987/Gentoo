@@ -1,0 +1,43 @@
+# System
+
+# misc
+
+dev-util/nvidia-cuda-toolkit
+x11-drivers/nvidia-drivers
+
+#  Communications
+
+net-im/discord-bin
+net-im/telegram-desktop-bin
+media-sound/mumble
+
+# Multimedia
+
+media-video/obs-studio
+
+# steam
+
+games-util/steam-meta
+media-fonts/steamfonts
+games-util/steam-client-meta
+games-util/steam-launcher
+games-util/steam-games-meta
+games-util/game-device-udev-rules
+
+# wine
+
+app-emulation/wine-staging
+app-emulation/wine-gecko
+app-emulation/faudio
+app-emulation/wine-mono
+app-emulation/vkd3d
+
+# lutris
+
+games-util/lutris
+
+# firefox
+
+www-client/firefox
+dev-libs/nss
+dev-libs/nspr
