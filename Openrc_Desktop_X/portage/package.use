@@ -1,0 +1,12 @@
+# core
+
+virtual/linux-sources firmware
+
+# misc
+
+media-libs/libsdl2 haptic
+net-fs/samba winbind
+
+# wine
+
+app-emulation/wine-staging X alsa cups faudio fontconfig gecko jpeg lcms ldap mono mp3 ncurses nls opengl osmesa perl png realtime run-exes samba sdl ssl threads truetype udisks v4l xcomposite xinerama xml pulseaudio vaapi vkd3d vulkan -scanner -test -themes -capi -custom-cflags -dos -gphoto2 -gsm -gssapi -gstreamer -kerberos -netapi -odbc -openal -opencl -oss -pcap -pipelight -prelink -scanner -test -themes

@@ -1,0 +1,25 @@
+# core
+
+# misc
+
+net-im/discord-bin
+games-util/lutris
+
+# steam
+
+games-util/steam-meta
+media-fonts/steamfonts
+games-util/steam-client-meta
+games-util/steam-launcher
+games-util/steam-games-meta
+games-util/game-device-udev-rules
+games-util/lutris
+
+# wine
+
+app-emulation/wine-staging
+app-emulation/wine-mono
+app-emulation/wine-gecko
+app-emulation/faudio
+app-emulation/vkd3d
+
