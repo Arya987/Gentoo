@@ -1,0 +1,55 @@
+# System
+
+# misc
+
+media-video/obs-studio
+dev-util/umockdev
+
+# xbox controller driver
+sys-kernel/xow
+
+# opencl
+
+dev-libs/rocm-opencl-runtime
+dev-libs/rocr-runtime
+dev-libs/rocm-comgr
+dev-libs/rocm-device-libs
+dev-util/rocm-cmake
+sys-devel/llvm-roc
+dev-libs/roct-thunk-interface
+dev-libs/hsa-ext-rocr
+dev-libs/rocclr
+
+#  Communications
+
+net-im/discord-bin
+net-im/telegram-desktop-bin
+media-sound/mumble
+www-client/torbrowser
+
+# steam
+
+games-util/steam-meta
+media-fonts/steamfonts
+games-util/steam-client-meta
+games-util/steam-launcher
+games-util/steam-games-meta
+games-util/game-device-udev-rules
+
+# wine
+
+app-emulation/wine-staging
+app-emulation/wine-gecko
+app-emulation/faudio
+app-emulation/wine-mono
+app-emulation/vkd3d
+
+# lutris
+
+games-util/lutris
+
+# firefox
+
+www-client/firefox
+dev-libs/nss
+dev-libs/nspr

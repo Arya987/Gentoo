@@ -1,0 +1,51 @@
+sys-kernel/gentoo-sources experimental
+dev-lang/python sqlite
+sys-firmware/intel-microcode -hostonly split-ucode
+virtual/linux-sources firmware
+sys-boot/grub mount
+sys-devel/llvm gold
+
+# misc
+
+app-crypt/pinentry gnome-keyring
+media-libs/libsdl2 haptic
+net-fs/samba winbind client
+media-fonts/noto-emoji buildfont
+media-libs/mlt fftw
+sys-libs/libseccomp static-libs
+media-libs/freetype harfbuzz
+sys-apps/file -python
+media-libs/libaom -cpu_flags_x86_sse2
+
+# kde
+
+media-sound/elisa vlc
+kde-apps/kdenetwork-meta -bittorrent
+
+# libreoffice
+
+app-office/libreoffice bluetooth branding cups dbus googledrive gtk java kde ldap mariadb -accessibility -debug -eds -gstreamer -gtk2 -odk -pdfimport -postgres -test
+
+# firefox
+
+www-client/firefox pgo lto clang custom-cflags custom-optimization gmp-autoupdate hwaccel pulseaudio screenshot startup-notification system-av1 system-icu system-jpeg system-libevent system-libvpx system-sqlite system-webp wifi -bindist -debug -eme-free -geckodriver -hardened -jack -test -wayland
+dev-lang/rust -clippy -debug -doc -libressl -nightly -parallel-compiler -rls -rustfmt -system-bootstrap system-llvm -wasm
+x11-base/xorg-server wayland xvfb
+
+# steam
+
+games-util/steam-client-meta pulseaudio steamruntime trayicon steamfonts
+games-util/steam-games-meta steamruntime mono -steamgames_bioshock_infinite -steamgames_defenders_quest -steamgames_dirt_rally -steamgames_dont_starve -steamgames_dwarfs -steamgames_hammerwatch -steamgames_ironclad_tactics -steamgames_journey_down -steamgames_narcissu -steamgames_painkiller -steamgames_portal -steamgames_shadow_mordor -steamgames_shatter -steamgames_source_engine -steamgames_te120 -steamgames_tf2 -steamgames_trine2 -steamgames_unwritten_tales -steamgames_voidexpanse -steamgames_witcher2
+
+# wine
+
+media-libs/libsdl2 haptic
+app-emulation/wine-staging X alsa cups custom-cflags faudio fontconfig gecko jpeg lcms ldap mono mp3 ncurses nls opengl osmesa perl png pulseaudio realtime run-exes samba sdl ssl threads truetype udev udisks v4l vaapi xcomposite xinerama xml -capi -dos ffmpeg -gphoto2 -gsm -gssapi -gstreamer -kerberos -netapi -odbc openal -opencl -oss -pcap -pipelight -prelink -scanner -test -themes vkd3d vulkan
+
+# qemu
+
+app-emulation/qemu aio alsa bzip2 caps curl doc fdt filecaps gnutls gtk io-uring iscsi jpeg lzo ncurses nfs nls numa opengl oss png pulseaudio python sdl seccomp slirp spice ssh udev usb usbredir vde vhost-net virgl virtfs vnc vte xattr zstd -accessibility -debug -fuse -glusterfs -infiniband --jack -jemalloc -multipath -pin-upstream-blobs -plugins -rbd -sasl -sdl-image -smartcard -snappy -static -static-user -systemtap -test -vhost-user-fs -xen -xfs
+app-emulation/libvirt bash-completion caps fuse iscsi iscsi-direct libssh libvirtd nfs nls numa policykit qemu sasl udev virt-network -zfs -apparmor -audit -dtrace -firewalld -glusterfs -lvm -lxc -parted -pcap -rbd -verify-sig -virtualbox -wireshark-plugins -xen
+net-dns/dnsmasq script
+kde-apps/krdc vnc
+

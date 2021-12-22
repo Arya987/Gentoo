@@ -1,0 +1,33 @@
+
+# exclude AMDGPU support
+
+sys-devel/llvm -llvm_targets_AMDGPU
+
+
+# edit pdf docs
+
+app-office/libreoffice pdfimport
+
+
+# for shorter passwd
+
+sys-auth/pambase -passwdqc
+
+
+# XFT font rendere support(mandatory)
+
+x11-terms/rxvt-unicode xft
+
+
+# temp
+
+app-office/libreoffice -cups
+
+
+#update
+app-text/xmlto text
+dev-qt/qtcore icu
+dev-qt/qtgui egl
+kde-frameworks/sonnet qml
+media-libs/harfbuzz icu
+sys-boot/grub mount grub_platforms_pc

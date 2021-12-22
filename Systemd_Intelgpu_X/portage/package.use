@@ -1,0 +1,55 @@
+sys-kernel/gentoo-sources experimental
+dev-lang/python sqlite
+sys-firmware/intel-microcode -hostonly split-ucode
+virtual/linux-sources firmware
+sys-boot/grub mount
+sys-devel/llvm gold
+x11-base/xorg-server xvfb
+
+# misc
+
+app-crypt/pinentry gnome-keyring
+media-libs/libsdl2 haptic
+net-fs/samba winbind client
+virtual/mpi cxx
+sys-cluster/openmpi cxx
+media-fonts/noto-emoji buildfont
+media-plugins/alsa-plugins pulseaudio
+media-libs/libaom -cpu_flags_x86_sse2
+sys-apps/file -python
+sys-libs/libseccomp static-libs
+media-libs/freetype harfbuzz
+#dev-lang/spidermonkey -clang
+
+# kde
+
+media-sound/elisa vlc
+kde-apps/kdenetwork-meta -bittorrent
+kde-plasma/plasma-meta -firewall
+
+# libreoffice
+
+app-office/libreoffice base bluetooth branding cups dbus googledrive gtk java kde ldap mariadb -accessibility -debug -eds -gstreamer -gtk2 -odk -pdfimport -postgres -test
+
+# firefox
+
+www-client/firefox pgo lto clang custom-cflags custom-optimization gmp-autoupdate hwaccel pulseaudio screenshot startup-notification system-av1 system-icu system-jpeg system-libevent system-libvpx system-sqlite system-webp wifi -bindist -debug -eme-free -geckodriver -hardened -jack -test -wayland
+dev-lang/rust -clippy -debug -doc -libressl -nightly -parallel-compiler -rls -rustfmt -system-bootstrap system-llvm -wasm
+
+# steam
+
+games-util/steam-client-meta pulseaudio steamruntime trayicon steamfonts
+games-util/steam-games-meta steamruntime mono -steamgames_bioshock_infinite -steamgames_defenders_quest -steamgames_dirt_rally -steamgames_dont_starve -steamgames_dwarfs -steamgames_hammerwatch -steamgames_ironclad_tactics -steamgames_journey_down -steamgames_narcissu -steamgames_painkiller -steamgames_portal -steamgames_shadow_mordor -steamgames_shatter -steamgames_source_engine -steamgames_te120 -steamgames_tf2 -steamgames_trine2 -steamgames_unwritten_tales -steamgames_voidexpanse -steamgames_witcher2
+
+# wine
+
+media-libs/libsdl2 haptic
+app-emulation/wine-staging X alsa cups custom-cflags faudio fontconfig gecko jpeg lcms ldap mono mp3 ncurses nls opengl osmesa perl png pulseaudio realtime run-exes samba sdl ssl threads truetype udev udisks v4l vaapi xcomposite xinerama xml -capi -dos ffmpeg -gphoto2 -gsm -gssapi -gstreamer -kerberos -netapi -odbc openal -opencl -oss -pcap -pipelight -prelink -scanner -test -themes vkd3d vulkan
+
+# qemu
+
+app-emulation/qemu aio alsa bzip2 caps curl fdt filecaps gtk gnutls io-uring jpeg lzo ncurses nfs nls numa opengl png pulseaudio python sdl seccomp spice usb vhost-net virtfs vnc xattr ssh usbredir vde vte -accessibility -bluetooth -debug  -gtk2 -infiniband -pin-upstream-blobs -rbd -sasl -sdl2 -smartcard -snappy
+app-emulation/libvirt caps dbus fuse iscsi iscsi-direct libvirtd libssh macvtap nfs nls numa qemu sasl udev vepa virt-network zeroconf -zfs -apparmor -audit -firewalld -glusterfs -lvm -lxc -parted -pcap -phyp -rbd -uml -virtualbox -wireshark-plugins -xen
+net-nds/openldap berkdb crypt cxx ipv6 minimal samba sasl ssl syslog tcpd -debug -experimental -gnutls -iodbc -kerberos -kinit -odbc -overlays -pbkdf2 -perl -sha2 -smbkrb5passwd -static-libs -test
+net-dns/dnsmasq script
+kde-apps/krdc vnc

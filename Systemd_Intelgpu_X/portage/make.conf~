@@ -1,0 +1,65 @@
+# These settings were set by the catalyst build script that automatically
+# built this stage.
+# Please consult /usr/share/portage/config/make.conf.example for a more
+# detailed example.
+
+# If your planning to use this build and wish to
+# enable non portable cpu specific compile optimizations
+# update COMMON_FLAGS to match this example
+#
+# COMMON_FLAGS="-march=native -O2 -pipe"
+#
+
+COMMON_FLAGS="-O2 -pipe"
+CFLAGS="${COMMON_FLAGS}"
+CXXFLAGS="${COMMON_FLAGS}"
+FCFLAGS="${COMMON_FLAGS}"
+FFLAGS="${COMMON_FLAGS}"
+
+# cpu simd instruction support
+#
+# To generate the matching simd flags for your cpu run cpuid2cpuflags
+# then update the config variable below and uncomment.
+#
+#CPU_FLAGS_X86="sse sse2 sse3 ssse3 mmx mmxext aes sse4_1 sse4_2"
+
+MAKEOPTS="-j10"
+#PORTAGE_NICENESS="15"
+
+# NOTE: This stage was built with the bindist Use flag enabled
+PORTDIR="/var/db/repos/gentoo"
+DISTDIR="/var/cache/distfiles"
+PKGDIR="/var/cache/binpkgs"
+
+# This sets the language of build output to English.
+# Please keep this setting intact when reporting bugs.
+LC_MESSAGES=C
+LC_CTYPE=en_US.UTF-8
+
+FEATURES="candy fixlafiles unmerge-orphans"
+EMERGE_DEFAULT_OPTS="--with-bdeps y --complete-graph y --fail-clean y"
+ACCEPT_LICENSE="*"
+
+
+VIDEO_CARDS="intel i915 i965"
+INPUT_DEVICES="libinput joystick"
+ACCEPT_LICENSE="*"
+GRUB_PLATFORMS="efi-64"
+CURL_SSL="openssl"
+RUBY_TARGETS="ruby27"
+
+ABI_X86="64 32"
+
+USE="10bit 12bit 7z 7zip aacplus aacs aio bash-completion bdplus bluetooth
+     bluray caps cgroup-hybrid chromaprint cjk clang conntrack corefonts
+     cryptsetup custom-cflags cxx device-mapper dist-kernel dns-over-tls dnssec dropbox ffmpeg
+     fontconfig handbook idn inotify iproute2 ithreads joystick jpeg jpeg2k
+     json lame ldap libevent libkms lm-sensors lm_sensors lrz lz4 lzma lzo
+     matroska mdnsresponder-compat modern-top mpi mpi-threads nat netlink
+     networkmanager nftables offensive offload opengl openssl opus osmesa pgo
+     pic pie png posix postproc pulseaudio python quicktime rar raw samba
+     secure-delete speex theora threads trayicon udf unzip upnp upnp-av
+     usbredir user-session uxa v4l vaapi vdpau vulkan wifi x264 x265 zeroconf
+     zip zstd"
+
+
