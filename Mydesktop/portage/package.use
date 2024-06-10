@@ -1,33 +1,75 @@
-
-# exclude AMDGPU support
-
-sys-devel/llvm -llvm_targets_AMDGPU
+ # Python upgrade
 
 
-# edit pdf docs
-
-app-office/libreoffice pdfimport
-
-
-# for shorter passwd
-
-sys-auth/pambase -passwdqc
+*/* PYTHON_TARGETS: -* python3_12
+*/* PYTHON_SINGLE_TARGET: -* python3_12
 
 
-# XFT font rendere support(mandatory)
+# smaller passwd
+sys-auth/pambase elogind -passwdqc
 
-x11-terms/rxvt-unicode xft
+# For urxvt
+x11-terms/rxvt-unicode perl xft
 
+# For Libreoffice
 
-# temp
+app-office/libreoffice clang googledrive java pdfimport vulkan
 
-app-office/libreoffice -cups
+# For Libreoffice-bin
+dev-libs/xmlsec nss
 
+# For simplescreenrecorder
+#media-video/simplescreenrecorder x264
+#media-video/ffmpeg x264
 
-#update
+# For p7zip
+app-arch/p7zip rar
+
+# Update
+app-crypt/gcr gtk
 app-text/xmlto text
-dev-qt/qtcore icu
-dev-qt/qtgui egl
-kde-frameworks/sonnet qml
 media-libs/harfbuzz icu
-sys-boot/grub mount grub_platforms_pc
+dev-qt/qtgui egl
+x11-libs/libfm gtk
+
+# For Kdeconnect
+dev-qt/qtmultimedia qml
+kde-frameworks/kconfig qml
+dev-qt/qtcore icu
+kde-frameworks/sonnet qml
+
+# For imv(Photo viewer)
+media-gfx/imv gif jpeg png svg
+
+# For woeusb
+sys-boot/grub grub_platforms_pc
+
+# For elogind
+sys-auth/elogind audit
+
+# For gentoo-kernel-bin
+sys-kernel/installkernel dracut
+
+# For sys-apps/gnome-disk-utility
+sys-apps/gnome-disk-utility fat
+
+# For dolphin
+#media-video/vlc ogg
+#kde-apps/dolphin semantic-desktop
+#kde-frameworks/kfilemetadata exif
+
+# For Pipewire
+media-video/pipewire sound-server -ffmpeg
+media-sound/pulseaudio -daemon
+
+# For Zoom
+#sys-libs/zlib minizip
+
+# Rust taking too much time for compiling
+dev-lang/rust -lto
+
+# For intel-microcode
+sys-firmware/intel-microcode dist-kernel
+
+# For spotify
+dev-libs/libdbusmenu gtk3
