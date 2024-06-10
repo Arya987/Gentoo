@@ -1,2 +1,12 @@
+# For Pcmanfm
 x11-misc/pcmanfm
 x11-libs/libfm
+
+# For Zoom
+net-im/zoom
+
+# For the warning of "The following unavailable installed packages were found    dev-libs/libpthread-stubs-0.4-r1" in revdep-rebuild
+dev-libs/libpthread-stubs **
+
+# For android-studio
+dev-util/android-studio
